@@ -28,13 +28,13 @@ public class DontFlyingBirds extends Birds{
         }
     }
 
-    public void walk() {
+    public void move() {
         System.out.println("I am walking");
 
     }
     @Override
     public String toString() {
         return "Animal: " + ", name: " + getName() + ", age " + getAge() +
-                ", livingEnvironment " + getLivingEnvironment() + " typeOfMove: " + getTypeOfMove();
+                ", livingEnvironment " + getLivingEnvironment() + " typeOfMove: " + getTypeOfMove() + " класс: " + getClass();
     }
 }

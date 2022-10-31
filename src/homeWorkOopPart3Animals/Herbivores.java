@@ -18,26 +18,15 @@ public class Herbivores extends Mammals {
         }
     }
 
-    public void graze() {
+    public void eat() {
         System.out.println("I am grazing");
     }
 
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        Herbivores that = (Herbivores) o;
-        return Objects.equals(foodType, that.foodType);
-    }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(foodType);
-    }
 
     @Override
     public String toString() {
         return "Animal: " + ", name: " + getName() + ", age " + getAge() +
-                ", Food:" + foodType;
+                ", Food:" + foodType + " класс: " + getClass();
     }
 }

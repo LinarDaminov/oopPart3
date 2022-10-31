@@ -27,6 +27,8 @@ public class Mammals extends Animals {
         System.out.println("I am walking");
     }
 
+
+
     public void setLivingEnvironment(String livingEnvironment) {
         if (livingEnvironment.isBlank() || livingEnvironment.isEmpty() || livingEnvironment == null) {
             this.livingEnvironment = "Неопознанная среда обитания";
@@ -42,4 +44,5 @@ public class Mammals extends Animals {
             this.speedMove = speedMove;
         }
     }
+
 }

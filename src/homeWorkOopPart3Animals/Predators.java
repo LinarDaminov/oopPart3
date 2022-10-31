@@ -16,13 +16,14 @@ public class Predators extends Mammals{
         }
     }
 
-    public void hunt() {
-        System.out.println("i am hunting");
-    }
     @Override
     public String toString() {
         return "Animal: " + ", name: " + getName() + ", age " + getAge() +
-                ", Food:" + foodType;
+                ", Food:" + foodType + " класс: " + getClass();
     }
 
+    @Override
+    public void eat() {
+        System.out.println("i am hunting");
+    }
 }

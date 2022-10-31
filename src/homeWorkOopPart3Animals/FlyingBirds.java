@@ -16,7 +16,7 @@ public class FlyingBirds extends Birds {
         }
     }
 
-    public void fly() {
+    public void move() {
             System.out.println("I am flying");
         }
 
@@ -34,6 +34,6 @@ public class FlyingBirds extends Birds {
     @Override
     public String toString() {
         return "Animal: " + ", name: " + getName() + ", age " + getAge() +
-                ", livingEnvironment " + getLivingEnvironment() + " typeOfMove: " + getTypeOfMove();
+                ", livingEnvironment " + getLivingEnvironment() + " typeOfMove: " + getTypeOfMove() + " класс: " + getClass();
     }
 }

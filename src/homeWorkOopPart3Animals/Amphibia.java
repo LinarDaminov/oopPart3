@@ -11,7 +11,7 @@ public class Amphibia extends Animals{
         }
 
     }
-        public void hunt() {
+        public void eat() {
             System.out.println("I am hunting");
     }
 
@@ -29,6 +29,6 @@ public class Amphibia extends Animals{
     }
     @Override
     public String toString() {
-        return "Animal: " + ", name: " + getName() + ", age " + getAge() + ", livingEnvironment: " + getLivingEnvironment();
+        return "Animal: " + ", name: " + getName() + ", age " + getAge() + ", livingEnvironment: " + getLivingEnvironment() + " класс: " + getClass();
     }
 }
